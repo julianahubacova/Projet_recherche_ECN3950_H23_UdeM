@@ -1,0 +1,16 @@
+---
+title: "Analyses économétriques"
+title-block-banner: false
+author:
+  - name: "Juliana Hubacova"
+    url: https://github.com/julianahubacova
+    affiliation: FAS1002
+    affiliation-url: https://FAS1002.github.io/A22
+    orcid: 0000-0001-8128-783X
+date: "2023-09-21"
+citation: true
+bibliography: references.bib
+format :
+    html : 
+        df-print: kable
+---
