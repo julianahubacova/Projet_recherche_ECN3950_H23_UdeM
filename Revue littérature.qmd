@@ -13,82 +13,19 @@ format :
     html : 
         df-print: kable
 ---
+
 **Revue de littérature**
-Dans cette section nous abordons les travaux de recherche existant sur notre sujet. 
 
-Les conséquences d’une grossesse non désirée menée à terme peuvent être observée sur la
-santé mentale de la femme, sa santé physique ou encore d’un point de vue socioéconomique.
-L’étude Turnaway menée par l’ANSIRH1 est une étude longitudinale qui
-examine les effets de la grossesse non désirée sur la vie des femmes. Près de 1 000 femmes
-ont été interrogées tous les six mois sur une période de cinq ans. Certaines ayant subi un
-avortement et d’autres à qui l’avortement a été refusé parce qu’elles avaient dépassé la
-limite de gestation de l’établissement. Un premier fait démontré grâce à ces données
-récoltées concerne l’insécurité économique. La probabilité que le revenu du ménage tombe
-sous le seuil de pauvreté fédéral est multiplié par quatre lorsque la femme se fait refuser un
-avortement souhaité.
+Dans cette section nous abordons les travaux de recherche existant sur notre sujet.
 
-Sarah Miller, Laura R. Wherry et Diane G. Foster (2023) comparent les résultats financiers
-des femmes interrogées dans le cadre de l’étude sur une période de 10 ans. Avant le recours
-à l’avortement, elles constatent une évolution similaire pour les deux groupes. Les
-trajectoires divergent lorsque les femmes souhaitant avoir recours à un avortement doivent
-mener à terme leur grossesse. Celles-ci connaissent une forte augmentation de leur détresse
-financière – endettement, basse côte de crédit – pendant les années qui suivent la grossesse.
-Outre l’aspect financier, on retrouve des conséquences sur l’éducation qui peuvent
-impacter les perspectives d’avenir de la femme.
+Les conséquences d'une grossesse non désirée menée à terme peuvent être observée sur la santé mentale de la femme, sa santé physique ou encore d'un point de vue socioéconomique. L'étude Turnaway menée par l'ANSIRH1 @aprospe est une étude longitudinale qui examine les effets de la grossesse non désirée sur la vie des femmes. Près de 1 000 femmes ont été interrogées tous les six mois sur une période de cinq ans. Certaines ayant subi un avortement et d'autres à qui l'avortement a été refusé parce qu'elles avaient dépassé la limite de gestation de l'établissement. Un premier fait démontré grâce à ces données récoltées concerne l'insécurité économique. La probabilité que le revenu du ménage tombe sous le seuil de pauvreté fédéral est multiplié par quatre lorsque la femme se fait refuser un avortement souhaité.
 
-Lauren J. Ralph, Jane Mauldon, M. Antonia Biggs et Diane G. Foster (2019) ont estimé les
-risques d’abandon d’études des femmes à différents niveaux de scolarité – lycée, université
-– après s’être fait refusée un avortement. Leurs résultats ont montré que celles-ci étaient
-autant susceptible d’être scolarisées que les femmes ayant bénéficié d’un avortement
-volontaire. Cependant, la différence entre ces deux groupes de femmes apparait
-principalement au niveau de l’obtention d’un diplôme supérieur ; 27% des participantes à
-qui l’avortement a été refusé ont complété des études post-secondaires contre 71% des
-participantes qui ont eu accès à un avortement. Ainsi, les femmes sans possibilité d’avorter
-vont d’une part, être contrainte à quitter leurs études et/ou le marché du travail durant leur
-grossesse. D’autre part, elles ne vont pas avoir d’autre possibilité que d’obtenir un diplôme
-de base et trouver un travail moins bien rémunéré pour subvenir à leur besoin et à celle de leur enfant. C’est effet est d’autant plus accentué lorsque celles-ci n’ont pas de partenaire
-ou le soutien de leur famille pour obtenir de l’aide financièrement.
-M. Antonia Biggs, Heather Gould et Diana G. Foster (2013) ont interrogées les
-participantes de l’étude Turnaway pour connaitre les raisons pour lesquelles elles
-souhaitaient avorter. Les raisons prédominantes sont : l’aspect financier (40%), le moment
-dans la vie (36%), le partenaire (31%), les autres enfants (29%).
+@miller2023 comparent les résultats financiers des femmes interrogées dans le cadre de l'étude sur une période de 10 ans. Avant le recours à l'avortement, elles constatent une évolution similaire pour les deux groupes. Les trajectoires divergent lorsque les femmes souhaitant avoir recours à un avortement doivent mener à terme leur grossesse. Celles-ci connaissent une forte augmentation de leur détresse financière -- endettement, basse côte de crédit -- pendant les années qui suivent la grossesse. Outre l'aspect financier, on retrouve des conséquences sur l'éducation qui peuvent impacter les perspectives d'avenir de la femme.
 
-Kelly Jones (2021) appuie davantage les liens mis en évidence ci-haut en abordant la
-relation existante entre l’accès à l’avortement, le niveau d’éducation, la carrière et le
-revenu. Elle se focalise en particulier sur les grossesses non désirées chez les adolescentes
-et jeunes adultes et ses résultats concernant la carrière des femmes démontre notamment
-une augmentation de 38% de la probabilité de travailler et une augmentation de 150% de
-la probabilité de travailler dans un poste de direction. Son étude est particulièrement
-intéressante parce qu’une de ces variables de contrôle concerne la contraception. Son
-analyse permet donc de distinguer les effets de la contraception des effets de l’avortement
-qui sont fortement similaires (fécondité, éducation, participation sur le marché).
+@ralph2020 ont estimé les risques d'abandon d'études des femmes à différents niveaux de scolarité -- lycée, université -- après s'être fait refusée un avortement. Leurs résultats ont montré que celles-ci étaient autant susceptible d'être scolarisées que les femmes ayant bénéficié d'un avortement volontaire. Cependant, la différence entre ces deux groupes de femmes apparait principalement au niveau de l'obtention d'un diplôme supérieur ; 27% des participantes à qui l'avortement a été refusé ont complété des études post-secondaires contre 71% des participantes qui ont eu accès à un avortement. Ainsi, les femmes sans possibilité d'avorter vont d'une part, être contrainte à quitter leurs études et/ou le marché du travail durant leur grossesse. D'autre part, elles ne vont pas avoir d'autre possibilité que d'obtenir un diplôme de base et trouver un travail moins bien rémunéré pour subvenir à leur besoin et à celle de leur enfant. C'est effet est d'autant plus accentué lorsque celles-ci n'ont pas de partenaire ou le soutien de leur famille pour obtenir de l'aide financièrement. @biggs2013 ont interrogées les participantes de l'étude Turnaway pour connaitre les raisons pour lesquelles elles souhaitaient avorter. Les raisons prédominantes sont : l'aspect financier (40%), le moment dans la vie (36%), le partenaire (31%), les autres enfants (29%).
 
-Ali Abboud (2019) évalue l'effet de grossesses non planifiées sur la carrière des femmes
-en se basant sur les cinq États américains qui ont légalisé l’avortement avant l’arrêt Roe v.
-Wade de 1973. Les différences de loi sur l’avortement entre les États et les cohortes de
-naissance lui ont permis d’estimer l’effet de l’accès à l’avortement à un certain âge sur la
-fertilité des femmes. Ses résultats ont montré un retard significatif d'une demi-année dans
-le début de la maternité pour les femmes qui ont eu accès à l'avortement avant l'âge de 21
-ans. À l’aide des résultats obtenus, il a ensuite été en mesure d’estimer l’effet de la
-fécondité sur la carrière des femmes constatant une augmentation significative du salaire
-suite au report du début non planifié de la maternité. L’effet observé diffère entre les
-femmes blanches et les femmes noires ; le salaire des femmes noires a augmenté de 10%,
-compensée par une diminution de l’offre de travail chez les femmes blanches. Angrist et
-Evans (1996) examinent le lien entre la famille et le travail. Ils utilisent la composition du
-sexe des deux premières naissances dans les familles qui ont au moins deux enfants comme
-variable instrumentale pour examiner l’effet des enfants supplémentaires sur l’offre de
-travail des parents. Leur étude démontre, d’une part, qu’il n’y a pas d’effet sur l’offre de travail des femmes plus éduquées et chez les femmes dont les maris ont des salaires élevés.
-D’autre part, il a été observé que les femmes qui ont un troisième enfant réduisent leur
-offre de travail tandis que l’offre de travail du mari ne change pas. Finalement lorsque
-l’enfant atteint l’âge de 13 ans, les effets de la maternité sur l’offre de travail de la mère
-disparaissent.
+@jones2021 appuie davantage les liens mis en évidence ci-haut en abordant la relation existante entre l'accès à l'avortement, le niveau d'éducation, la carrière et le revenu. Elle se focalise en particulier sur les grossesses non désirées chez les adolescentes et jeunes adultes et ses résultats concernant la carrière des femmes démontre notamment une augmentation de 38% de la probabilité de travailler et une augmentation de 150% de la probabilité de travailler dans un poste de direction. Son étude est particulièrement intéressante parce qu'une de ces variables de contrôle concerne la contraception. Son analyse permet donc de distinguer les effets de la contraception des effets de l'avortement qui sont fortement similaires (fécondité, éducation, participation sur le marché).
 
-La littérature sur ce sujet est large, en particulier en ce qui concerne les États-Unis. Notre
-volonté d’observer cette relation au Canada nous permet d’y contribuer en analysant une
-autre région géographique. Évidemment, de nombreux avortement ont eu lieu illégalement
-et n’ont donc pas été indiquée dans les bases de données que nous allons utiliser,
-provoquant des imprécisions dans notre analyse. Ces avortements illégaux sont
-généralement dangereux pour la santé et la vie de la femme d’où l’importance de la
-présence de bonnes politiques en termes d’avortement, Albrecht et Steigmeier (2022). Ceci
-fait partie des raisons pour lesquelles nous avons décidé de travailler sur la thématique de
-l’avortement.
+@abboud évalue l'effet de grossesses non planifiées sur la carrière des femmes en se basant sur les cinq États américains qui ont légalisé l'avortement avant l'arrêt Roe v. Wade de 1973. Les différences de loi sur l'avortement entre les États et les cohortes de naissance lui ont permis d'estimer l'effet de l'accès à l'avortement à un certain âge sur la fertilité des femmes. Ses résultats ont montré un retard significatif d'une demi-année dans le début de la maternité pour les femmes qui ont eu accès à l'avortement avant l'âge de 21 ans. À l'aide des résultats obtenus, il a ensuite été en mesure d'estimer l'effet de la fécondité sur la carrière des femmes constatant une augmentation significative du salaire suite au report du début non planifié de la maternité. L'effet observé diffère entre les femmes blanches et les femmes noires ; le salaire des femmes noires a augmenté de 10%, compensée par une diminution de l'offre de travail chez les femmes blanches. @angrist examinent le lien entre la famille et le travail. Ils utilisent la composition du sexe des deux premières naissances dans les familles qui ont au moins deux enfants comme variable instrumentale pour examiner l'effet des enfants supplémentaires sur l'offre de travail des parents. Leur étude démontre, d'une part, qu'il n'y a pas d'effet sur l'offre de travail des femmes plus éduquées et chez les femmes dont les maris ont des salaires élevés. D'autre part, il a été observé que les femmes qui ont un troisième enfant réduisent leur offre de travail tandis que l'offre de travail du mari ne change pas. Finalement lorsque l'enfant atteint l'âge de 13 ans, les effets de la maternité sur l'offre de travail de la mère disparaissent.
+
+La littérature sur ce sujet est large, en particulier en ce qui concerne les États-Unis. Notre volonté d'observer cette relation au Canada nous permet d'y contribuer en analysant une autre région géographique. Évidemment, de nombreux avortement ont eu lieu illégalement et n'ont donc pas été indiquée dans les bases de données que nous allons utiliser, provoquant des imprécisions dans notre analyse. Ces avortements illégaux sont généralement dangereux pour la santé et la vie de la femme d'où l'importance de la présence de bonnes politiques en termes d'avortement, Albrecht et Steigmeier (2022). Ceci fait partie des raisons pour lesquelles nous avons décidé de travailler sur la thématique de l'avortement.
