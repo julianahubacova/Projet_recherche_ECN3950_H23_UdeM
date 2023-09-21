@@ -8,6 +8,7 @@ author:
     affiliation: ECN3950_H23_UdeM
     orcid: 0000-0001-8128-783X
 citation: true
+bibliography: references.bib
 ---
 
 **Motivation du projet**
