@@ -1,9 +1,46 @@
 ---
-title: "About"
+title: "Introduction"
+title-block-banner: false
+author:
+  - name: "Juliana Hubacova"
+    url: https://github.com/julianahubacova
+    affiliation: ECN3950_H23_UdeM
+    orcid: 0000-0001-8128-783X
+date: "2023-09-21"
+citation: true
+bibliography: references.bib
+format :
+    html : 
+        df-print: kable
 ---
 
-About this site
+**Introduction**
 
-```{r}
-1 + 1
-```
+La légalisation de l’avortement a récemment été remise en question aux États-Unis avec
+l’affaire Dobbs v. Jackson Women’s Health Organization en juin 2022, décision de la Cour
+suprême ne conférant plus le droit à l’avortement. Après près de 50 ans, l’arrêt Roe v.
+Wade a été annulé au détriment de la sécurité économique des femmes et des familles.
+Plusieurs recherches ont tenté de démontrer l’impact positif de la légalisation de
+l’avortement sur une série d’indicateurs économiques tels que la participation au marché
+du travail, le niveau d’éducation, les revenus et la pauvreté infantile. Notre intérêt se porte
+particulièrement sur la participation des femmes sur le marché du travail.
+Nous supposons que les femmes qui font face à une grossesse non planifiée et qui
+n’ont pas accès aux soins liés à l’avortement sont contraintes de quitter leurs études ou le
+marché du travail et se tourner vers des diplômes de base et des métiers moins bien
+rémunérés. On veut donc observer l’impact de la légalisation de l’avortement sur le taux
+d’emploi des femmes.
+
+Nous allons étudier cette situation au Canada. L’accès à l’avortement diffèrent d’une
+province à l’autre : les provinces davantage conservateurs et religieuses fournissent peu de
+services d’accès à l’avortement (pas de cliniques offrant la possibilité d’avorter, besoin
+d’approbation par plusieurs médecins, etc). La légalisation de l’avortement au Canada a eu
+lieu plus de 10 ans après les États-Unis avec l’affaire R. c. Morgentaler en 1988. Le taux
+d’emploi des femmes âgées de 15 à 64 ans était de 54,5% à ce moment-là, contre 74,1%
+en 2019. Sur cette période d’à peu près 30 ans, le taux d’emploi a augmenté de 35,96 points
+de pourcentage. C’est ce phénomène qui nous intéresse particulièrement. De nombreuses
+personnes soutiennent que l’avortement contribue à l’autonomisation des femmes dans la
+société. Abolir ce droit pourrait avoir des conséquences néfastes sur le bien-être des
+femmes notamment en ce qui concerne les complications liées à des avortements
+dangereux et illégales. L’avortement est un sujet très controversé. Les opinions diffèrent
+d’un point de vue religieux et culturel. L’analyse que nous allons entreprendre ici
+se base sur un aspect purement économique.
