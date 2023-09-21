@@ -14,7 +14,7 @@ format :
         df-print: kable
 ---
 
-1.  Sans variable de contrôle
+1.  [Sans variable de contrôle]{.underline}
 
 Notre première équation de régression linéaire (sans variable de contrôle) est la suivante :
 
@@ -44,21 +44,37 @@ Notre première équation de régression linéaire (sans variable de contrôle) 
 
 Nous assumons que les écarts-types sont hétéroscédastiques. Tous les coefficients estimés sont statistiquement significatifs au seuil de 1% (p-value \< 1%) excepté le coefficient associé au terme d'interaction qui n'est pas statistiquement significatif. On peut donc en déduire qu'il n'y a pas d'effet de la légalisation de l'avortement sur le taux d'emploi des femmes.
 
-2.  Ajout d'effets fixes
+2.  [Ajout d'effets fixes]{.underline}
 
 Nous allons maintenant inclure des effets fixes de temps et d'entités :
 
 ![](images/Capture%20d%E2%80%99e%CC%81cran,%20le%202023-09-21%20a%CC%80%2017.06.51.png)
 
-Étant donné que nous avons des données de panel, nous incluons des effets fixes de temps (λ_t) et des effets fixes d'entités (α_i) dans notre second modèle. Les effets fixes de temps permettent de contrôler pour ce qui est commun à toutes les provinces mais qui varie au fil des années (ex ; politique fédérale). Tandis que les effets fixes d'entités permettent de contrôler pour ce qui est propre à chaque province mais constant dans le temps (ex ; l'abondance de la main d'œuvre). L'avantage principale de ce modèle est qu'il permet d'ajouter des variables qui ne sont pas nécessairement observables et il permet de réduire le biais de variable omise présent dans le premier modèle. Nous faisons les trois régressions suivantes ; Rég (a) avec des effets fixes de temps seulement Rég (b) avec des effets fixes d'entités seulement Rég (c) avec les effets fixes de temps et d'entités Dans chacune des trois régressions, nous prenons en compte l'hétéroscédasticité des écarts-types et l'autocorrélation entre entités (d'où l'utilisation de 'vce' et 'cluster' sur Stata). Nous avons associé un identifiant unique à chaque province pour faire l'analyse avec les effets fixes.
+Étant donné que nous avons des données de panel, nous incluons des effets fixes de temps (λ_t) et des effets fixes d'entités (α_i) dans notre second modèle. Les effets fixes de temps permettent de contrôler pour ce qui est commun à toutes les provinces mais qui varie au fil des années (ex ; politique fédérale). Tandis que les effets fixes d'entités permettent de contrôler pour ce qui est propre à chaque province mais constant dans le temps (ex ; l'abondance de la main d'œuvre). L'avantage principale de ce modèle est qu'il permet d'ajouter des variables qui ne sont pas nécessairement observables et il permet de réduire le biais de variable omise présent dans le premier modèle.
+
+Nous faisons les trois régressions suivantes ;
+
+-   Rég (a) avec des effets fixes de temps seulement
+
+-   Rég (b) avec des effets fixes d'entités seulement
+
+-   Rég (c) avec les effets fixes de temps et d'entités
+
+Dans chacune des trois régressions, nous prenons en compte l'hétéroscédasticité des écarts-types et l'autocorrélation entre entités (d'où l'utilisation de 'vce' et 'cluster' sur Stata). Nous avons associé un identifiant unique à chaque province pour faire l'analyse avec les effets fixes.
 
 ```{r}
 
 ```
 
-Les coefficients estimés pour les trois régressions se trouvent dans le Tableau 4 ci-dessus. On peut constater que les coefficients estimés pour notre variable 'treattime' sont tous identiques dans les trois régressions. Cependant, ils ne sont pas statistiquement significatifs. Il n'y a donc pas d'effet causal entre la légalisation de l'avortement et le taux d'emploi des femmes. En comparant les coefficients de détermination (R carré) qui permettent de juger la qualité de la régression linéaire, on constate que la troisième régression avec effets fixes de temps et d'entités a le meilleur R carré ce qui décrit une meilleure qualité. De la même manière, si on considère seulement les provinces avec une variation considérable sur le taux d'avortement -- Manitoba, Nouveau-Brunswick et Québec, Terre-Neuve-et-Labrador, Île-du-Prince-Édouard -- on retrouvera un coefficient estimé pour 'treattime' identique à la régression sans variable de contrôle, soit 0,581.
+Les coefficients estimés pour les trois régressions se trouvent dans le Tableau 4 ci-dessus. On peut constater que les coefficients estimés pour notre variable 'treattime' sont tous identiques dans les trois régressions. Cependant, ils ne sont pas statistiquement significatifs. On ne peut donc pas conclure à un effet causal entre la légalisation de l'avortement et le taux d'emploi des femmes.
 
-3.  Études d'événements L'utilisation de l'étude d'événement va nous permettre de mieux comprendre comment la légalisation de l'avortement affecte le taux d'emploi des femmes dans le temps. Nous allons diviser la période de temps analysée en plusieurs intervalles autour de l'année précédant la légalisation de l'avortement, soit 1987, et estimer l'effet du traitement séparément pour chaque intervalle.
+En comparant les coefficients de détermination (R carré) qui permettent de juger la qualité de la régression linéaire, on constate que la troisième régression avec effets fixes de temps et d'entités a le meilleur R carré ce qui décrit une meilleure qualité.
+
+De la même manière, si on considère seulement les provinces avec une variation considérable sur le taux d'avortement -- Manitoba, Nouveau-Brunswick et Québec, Terre-Neuve-et-Labrador, Île-du-Prince-Édouard -- on retrouvera un coefficient estimé pour 'treattime' identique à la régression sans variable de contrôle, soit 0,581.
+
+3.  [Études d'événements]{.underline}
+
+L'utilisation de l'étude d'événement va nous permettre de mieux comprendre comment la légalisation de l'avortement affecte le taux d'emploi des femmes dans le temps. Nous allons diviser la période de temps analysée en plusieurs intervalles autour de l'année précédant la légalisation de l'avortement, soit 1987, et estimer l'effet du traitement séparément pour chaque intervalle.
 
 Notre équation de régression pour l'étude d'événements est la suivante :
 
