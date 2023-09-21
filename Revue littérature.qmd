@@ -1,5 +1,5 @@
 ---
-title: "Analyse économétrique"
+title: "Revue de littérature"
 title-block-banner: false
 author:
   - name: "Juliana Hubacova"
