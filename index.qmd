@@ -25,3 +25,4 @@ n’ont pas accès aux soins liés à l’avortement sont contraintes de quitter
 marché du travail et se tourner vers des diplômes de base et des métiers moins bien
 rémunérés. 
 
+Ce projet a initialement été réalisé sur Stata durant la session d'Hiver 2023 (Jan-Avr). Ceci est un reproduction sur Rstudio par Juliana Hubacova (Sep 2023).
