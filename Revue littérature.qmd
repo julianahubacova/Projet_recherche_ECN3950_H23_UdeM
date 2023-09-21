@@ -15,6 +15,7 @@ format :
         df-print: kable
 ---
 **Revue de littérature**
+Dans cette section nous abordons les travaux de recherche existant sur notre sujet. 
 
 Les conséquences d’une grossesse non désirée menée à terme peuvent être observée sur la
 santé mentale de la femme, sa santé physique ou encore d’un point de vue socioéconomique.
