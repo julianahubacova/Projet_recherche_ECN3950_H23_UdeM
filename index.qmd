@@ -1,8 +1,6 @@
 ---
 title: "L'effet de la légalisation de l'avortement sur le taux d'emploi des femmes au Canada"
 title-block-banner: false
-description: 
-    Motivation et choix de sujet.  
 date: "2023-09-21"
 author:
   - name: "Juliana Hubacova"
@@ -10,7 +8,7 @@ author:
     affiliation: ECN3950_H23_UdeM
     orcid: 0000-0001-8128-783X
 citation: true
-bibliography: references.bib.Rmd
+bibliography: references.bib
 ---
 
 **Motivation du projet**
