@@ -36,14 +36,14 @@ Pour analyser l'effet causal, nous allons utiliser la méthode des doubles diff�
 
 Notre équation de départ est la suivante :
 
-𝑇𝑥_𝑒𝑚𝑝𝑙𝑜𝑖!" = 𝛽# + 𝛽\$𝑡 + 𝛽%𝐷! + 𝛽&(𝐷! ∗ 𝑡) + 𝑒!"
+![](images/Capture%20d%E2%80%99e%CC%81cran,%20le%202023-09-21%20a%CC%80%2017.22.19.png)
 
 Légende :
 
-𝐷! = 1 pour le groupe de traitement et 0 pour le groupe de contrôle
+𝐷_i = 1 pour le groupe de traitement et 0 pour le groupe de contrôle
 
-𝑡 = 1 désigne l'après traitement et 0 désigne l'avant traitement
+t = 1 désigne l'après traitement et 0 désigne l'avant traitement
 
-𝐷! ∗ 𝑡 = 1 si on considère le groupe traitement à la période post-traitement, 0 sinon
+𝐷_i ∗ t = 1 si on considère le groupe traitement à la période post-traitement, 0 sinon
 
 L'hypothèse principale pour la méthode des doubles différences repose sur la tendance parallèle. Cette hypothèse affirme que, en l'absence de traitement, la tendance de notre variable d'intérêt pour le groupe contrôle et le groupe traitement sont parallèle dans le temps. Ainsi, dans notre cas on s'attend à ce que les taux d'emploi pour les femmes de 15 à 44 ans et les femmes de 45 ans soient parallèle avant la légalisation de l'avortement. Cette hypothèse va être vérifier dans la section suivante qui concerne l'analyse descriptive.
