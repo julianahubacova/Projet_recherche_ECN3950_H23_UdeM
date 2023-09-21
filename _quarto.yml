@@ -3,11 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "Projet de recherche, Université de Montréal"
+  title: "Projet de recherche, UdeM"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Introduction
       - Revue littérature.qmd
       - Données et méthodologie.qmd
       - Analyse descriptive.qmd
