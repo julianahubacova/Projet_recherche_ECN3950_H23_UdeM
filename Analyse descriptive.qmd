@@ -37,15 +37,16 @@ library(hrbrthemes)
 
 Avant de débuter les analyses économétriques, regardons l'évolution individuelle de nos variables.
 
-**Évolution de notre variable dépendante : taux d'emploi** Observons la différe d'évolution du taux d'emploi entre le groupe contrôle (45 ans et plus) et le groupe traitement (15 à 44 ans).
+**Évolution de notre variable dépendante : taux d'emploi**
+
+Observons la différe d'évolution du taux d'emploi entre le groupe contrôle (45 ans et plus) et le groupe traitement (15 à 44 ans).
 
 ```{r message=FALSE, warning=FALSE}
 # Importation des données
 employment_data <- read_dta("~/Desktop/UdeM/sc.economiques/H23/ECN3950/Data/employment_data.dta")
-View(employment_data)
 employment_data_can <- employment_data %>% 
   filter(géo == "Canada")
-view(employment_data_can)
+
 # Évolution du taux d'emploi en fonction des deux groupes ; contrôle et traitement
 o <- ggplot(employment_data_can,
        mapping = aes(x = year, y = tx_emploi, color = groupedâge)) +
@@ -62,12 +63,13 @@ o
 
 Notre hypothèse de base pour notre modèle des doubles différences assume que la trajectoire du taux d'emploi au cours du temps pour les deux groupes est parallèle. Le graphique 1 permet d'observer l'évolution du taux d'emploi pour les deux groupes d'âge au Canada. L'évolution n'est pas réellement parallèle entre les deux groupes comme nous le voudrions pour notre modèle. Des chocs externes ou des événements affectant le taux d'emploi des femmes différemment pour le groupe de contrôle et pour le groupe de traitement peuvent en être responsable. On peut remarquer que le taux d'emploi pour le groupe de contrôle augmente au fil du temps, tandis que le taux d'emploi pour notre groupe de traitement oscille autour du niveau de 65% à la suite de la légalisation de l'avortement.
 
-**Évolution de notre variable indépendante : taux d'avortement** En ce qui concerne notre variable indépendante, le graphique 2 nous permet d'observer les taux d'avortement au cours des années au Canada. À la suite de la légalisation de l'avortement, les taux d'avortement pour les femmes âgées de 15 à 44 ans a rapidement augmenté.
+**Évolution de notre variable indépendante : taux d'avortement**
+
+En ce qui concerne notre variable indépendante, le graphique 2 nous permet d'observer les taux d'avortement au cours des années au Canada. À la suite de la légalisation de l'avortement, les taux d'avortement pour les femmes âgées de 15 à 44 ans a rapidement augmenté.
 
 ```{r message=FALSE, warning=FALSE}
 # Importation des banques de données
 Canada_abort <- read_excel("~/Desktop/UdeM/sc.economiques/H23/ECN3950/Data/Canada_abort.xlsx")
-View(Canada_abort)
 
 # Évolution du taux d'avortement pour les 15 à 44 ans au Canada
 p <- ggplot(Canada_abort,
@@ -87,7 +89,7 @@ Cependant, cette hausse des taux d'avortement ne se produit pas de façon unifor
 ```{r message=FALSE, warning=FALSE}
 # Importation des données d'avortement par province
 abortion_loc_all_prov_19782000 <- read_dta("~/Desktop/UdeM/sc.economiques/H23/ECN3950/Data/abortion__loc_all_prov_19782000.dta")
-View(abortion_loc_all_prov_19782000)
+
 # Évolution du taux d'avortement au sein des provinces
 q<- ggplot(abortion_loc_all_prov_19782000,
        mapping = aes(x = year, y = abort_perc_loc, color = province)) +
@@ -107,7 +109,7 @@ Le graphique ci-dessous prend en compte la résidence de la femme. On observe do
 ```{r message=FALSE, warning=FALSE}
 # Importation des données d'avortement pour les résidents
 abortion_all_prov_19782000 <- read_dta("~/Desktop/UdeM/sc.economiques/H23/ECN3950/Data/abortion_all_prov_19782000.dta")
-View(abortion_all_prov_19782000)
+
 # Évolution du taux d'avortement en fonction de la résidence de la femme
 r<- ggplot(abortion_all_prov_19782000,
        mapping = aes(x = year, y = abort_perc, color = province)) +
