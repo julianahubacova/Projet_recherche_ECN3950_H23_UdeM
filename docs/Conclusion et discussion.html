@@ -9,7 +9,7 @@
 <meta name="author" content="Juliana Hubacova">
 <meta name="dcterms.date" content="2023-09-21">
 
-<title>Projet de recherche, Université de Montréal - Données et méthodologie</title>
+<title>Projet de recherche, UdeM - Conclusion et discussion</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,25 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
-}
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
 }
 </style>
 
@@ -92,7 +73,7 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Projet de recherche, Université de Montréal</span>
+    <span class="navbar-title">Projet de recherche, UdeM</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -101,10 +82,10 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="./index.html">Introduction</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Revue littérature.html">Revue de littérature</a>
+    <a class="nav-link" href="./Revue littérature.html">Revue de littérature</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Données et méthodologie.html">Données et méthodologie</a>
@@ -116,7 +97,7 @@ div.csl-indent {
     <a class="nav-link" href="./Analyses économétriques.html">Analyses économétriques</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Conclusion et discussion.html">Conclusion et discussion</a>
+    <a class="nav-link active" href="./Conclusion et discussion.html" aria-current="page">Conclusion et discussion</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -136,7 +117,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Données et méthodologie</h1>
+<h1 class="title">Conclusion et discussion</h1>
 </div>
 
 
@@ -169,50 +150,22 @@ div.csl-indent {
 
 </header>
 
-<ol type="1">
-<li><u>Données</u></li>
-</ol>
-<p>Pour réaliser l’analyse, nous avons besoin de données sur le taux d’emploi des femmes et le nombre d’avortement réalisé en fonction de l’âge pour le Canada et ses provinces, avant et après la réforme concernant l’avortement.</p>
-<p><strong>Taux d’emploi des femmes</strong></p>
-<p>Nous utilisons les données sur le taux de chômage, le taux d’activité et le taux d’emploi selon le sexe, données annuelles de Statistiques Canada <span class="citation" data-cites="gouvernementducanada2023">Gouvernement du Canada (<a href="#ref-gouvernementducanada2023" role="doc-biblioref">2023</a>)</span>. Ces données s’étendent de 1976 à 2022, pour chaque province du Canada et pour différents groupes d’âges des hommes et des femmes.</p>
-<p><strong>Taux d’avortement</strong></p>
-<p>Nous utilisons les données sur les issues de la grossesse (naissances vivantes, avortements provoqués et pertes foetales) de Statistiques Canada <span class="citation" data-cites="gouvernementducanada2018">Gouvernement du Canada (<a href="#ref-gouvernementducanada2018" role="doc-biblioref">2018</a>)</span>. Elles s’étendent de 1974 à 2005 et indiquent les issues de la grossesse en fonction de l’âge et du lieu de résidence de la femme. Ces données sont combinées et comparés aux statistiques historiques sur l’avortement récoltées par Wm. Robert Johnston <span class="citation" data-cites="historic"><span>“Historical Abortion Statistics, Quebec (Canada)”</span> (<a href="#ref-historic" role="doc-biblioref">n.d.</a>)</span> qui elles s’étendent de 1969 à 2021. L’avortement était pratiqué dès 1969 pour des raisons de sécurité vis-à-vis de la mère, certains furent pratiqués illégalement. Les données ont été téléchargées sous forme de tableau Excel, les données ont été rangées de même manière pour chacune des provinces pour faciliter les manipulations sur Stata (même titre de colonne, colonne sous forme numérique).</p>
-<p><strong>Manipulations Excel</strong></p>
-<p>Les données ont été téléchargées individuellement pour chaque province sous forme de tableau Excel et ont été rangées de même manière pour faciliter les manipulations sur Stata/Rstudio (même titre de colonne, colonne sous forme numérique). Une fois importée sdans le logiciel, nous avons entreprit d’autres manipulations sur les données notamment pour garder uniquement les variables d’intérêt et combiner les différents fichiers Excel en une seule base de données que nous avons par la suite utilisée comme base de données principale pour l’analyse causale.</p>
-<ol start="2" type="1">
-<li><u>Méthodologie</u></li>
-</ol>
-<p>Pour analyser l’effet causal, nous allons utiliser la méthode des doubles différences. Nous avons deux groupes : le groupe de contrôle et le groupe de traitement. Le groupe de contrôle se constitue des femmes de plus de 45 ans tandis que le groupe de traitement se constituent des femmes de 15 à 44 ans. Le traitement considéré sera la légalisation de l’avortement en 1988.</p>
-<p>Notre équation de départ est la suivante :</p>
-<p><img src="images/Capture%20d%E2%80%99e%CC%81cran,%20le%202023-09-21%20a%CC%80%2017.22.19.png" class="img-fluid"></p>
-<p>Légende :</p>
-<p>𝐷_i = 1 pour le groupe de traitement et 0 pour le groupe de contrôle</p>
-<p>t = 1 désigne l’après traitement et 0 désigne l’avant traitement</p>
-<p>𝐷_i ∗ t = 1 si on considère le groupe traitement à la période post-traitement, 0 sinon</p>
-<p>L’hypothèse principale pour la méthode des doubles différences repose sur la tendance parallèle. Cette hypothèse affirme que, en l’absence de traitement, la tendance de notre variable d’intérêt pour le groupe contrôle et le groupe traitement sont parallèle dans le temps. Ainsi, dans notre cas on s’attend à ce que les taux d’emploi pour les femmes de 15 à 44 ans et les femmes de 45 ans soient parallèle avant la légalisation de l’avortement. Cette hypothèse va être vérifier dans la section suivante qui concerne l’analyse descriptive.</p>
+<p><strong>Conclusion</strong></p>
+<p>L’analyse économétrique conduite dans ce projet de recherche réalisé dans le but de constater un potentiel effet causal entre la légalisation de l’avortement et le taux d’emploi des femmes ne nous permet pas de conclure à une relation entre ces deux variables. Les résultats obtenus démontrent une baisse du taux d’emploi des femmes à la suite de la nouvelle loi instaurée mais ceci entre en contradiction avec notre hypothèse initiale selon laquelle les taux d’emploi des femmes augmente avec l’accès à l’avortement. Nos régressions n’ont pas retourné des coefficients statistiquement significatifs et donc cette baisse des taux d’emploi n’est pas attribuable à la légalisation de l’avortement mais pourrait être dû à d’autres facteurs externes et aux phénomènes économiques.</p>
+<p><strong>Discussion</strong></p>
+<p>Des améliorations à notre modèle de base pourraient être apportées notamment par l’ajout de variable de contrôle pour réduire le biais de variable omise (éducation des femmes, utilisation de la pilule contraceptive, …) Nous avons entrepris des recherches pour ajouter les taux d’éducation comme variable de contrôle dans notre modèle mais ces recherches ont été sans succès. Les taux d’éducation pour les femmes au Canada que nous avons trouvé commencent à partir des années 1990 seulement. Le manque de données et l’imprécision de celles-ci – notamment par la non prise en compte des avortement illégaux dans nos bases de données principales – ont potentiellement contribué à ce que nous ne trouvions pas d’effet significatif dans nos analyses économétriques. En ce qui concerne nos choix de groupe de traitement et de contrôle, une alternative au groupe de contrôle ‘les femmes de 45 ans et plus’ aurait pu être les hommes. Nous avons préféré utiliser les femmes de 45 ans et plus dont les taux d’avortement sont quasi nuls parce que nous estimions que la différence entre les taux d’emplois des hommes et des femmes cachait de nombreux autres facteurs telles que des opportunités d’emplois différentes, des inégalités salariales et de la discrimination de genre qui seraient difficile à prendre en compte. Toutefois, il serait intéressant de réaliser une analyse similaire utilisant les hommes comme groupe de contrôle pour comparer les différences dans les résultats. Bien que des améliorations puissent être effectuée sur notre modèle, nous pouvons tout de même conclure qu’aucun effet n’a été trouvé entre la légalisation de l’avortement et le taux d’emplois des femmes.</p>
 
 
 
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-gouvernementducanada2018" class="csl-entry" role="doc-biblioentry">
-Gouvernement du Canada, Statistique Canada. 2018. <span>“Issues de la grossesse (naissances vivantes, avortements provoqués, et pertes foetales).”</span> <a href="https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1310016701">https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1310016701</a>.
-</div>
-<div id="ref-gouvernementducanada2023" class="csl-entry" role="doc-biblioentry">
-———. 2023. <span>“Taux de chômage, taux d’activité et taux d’emploi selon le sexe, données annuelles.”</span> <a href="https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1410032702">https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1410032702</a>.
-</div>
-<div id="ref-historic" class="csl-entry" role="doc-biblioentry">
-<span>“Historical Abortion Statistics, Quebec (Canada).”</span> n.d. <a href="https://www.johnstonsarchive.net/policy/abortion/canada/ab-canada-QC.html">https://www.johnstonsarchive.net/policy/abortion/canada/ab-canada-QC.html</a>.
-</div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{hubacova2023,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{hubacova2023,
   author = {Juliana Hubacova},
   editor = {},
-  title = {Données Et Méthodologie},
+  title = {Conclusion Et Discussion},
   date = {2023-09-21},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-hubacova2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Juliana Hubacova. 2023. <span>“Données Et Méthodologie.”</span>
+Juliana Hubacova. 2023. <span>“Conclusion Et Discussion.”</span>
 September 21, 2023.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

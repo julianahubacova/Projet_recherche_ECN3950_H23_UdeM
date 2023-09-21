@@ -9,7 +9,7 @@
 <meta name="author" content="Juliana Hubacova">
 <meta name="dcterms.date" content="2023-09-21">
 
-<title>Projet de recherche, Université de Montréal - L’effet de la légalisation de l’avortement sur le taux d’emploi des femmes au Canada</title>
+<title>Projet de recherche, UdeM - L’effet de la légalisation de l’avortement sur le taux d’emploi des femmes au Canada</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -73,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Projet de recherche, Université de Montréal</span>
+    <span class="navbar-title">Projet de recherche, UdeM</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -82,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+    <a class="nav-link active" href="./index.html" aria-current="page">Introduction</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Revue littérature.html">Revue de littérature</a>
@@ -152,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>Motivation du projet</strong></p>
 <p>Ce projet est réalisé dans le cadre du cours de troisième année ECN3950 du Baccalauréat en sciences économiques à l’Université de Montréal. Le cours ECN3950 intitulé “Atelier en économie appliquée” a pour objectif d’analyser une question spécifique d’économie et d’actualité. Plus d’informations sur le cours sont disponibles au lien suivant : <a href="https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3950/" class="uri">https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3950/</a></p>
-<p>Avec ma collègue Anna Amadio, nous voulons étudier une question contemporaine touchant les femmes en particulier. En faisant nos recherches, nous sommes tombés sur l’hypothèse de Donohue-Levitt. Leur hypothèse - très controversée - concerne l’effet de la légalisation de l’avortement sur la criminalité aux États-Unis. <span class="citation" data-cites="DonohueLevitt">(<a href="#ref-DonohueLevitt" role="doc-biblioref"><strong>DonohueLevitt?</strong></a>)</span>(2001) soutiennent l’idée que la légalisation de l’avortement aurait permis de diminuer le taux de crime dans les décennies suivant la légalisation. Le travail de John J. Donohue III et Steven D. Levitt nous a inspiré dans notre recherche de thématique de projet. Nous avons donc décidé d’analyser l’effet de la légalisation de l’avortement sur d’autres facteurs macroéconomiques au Canada.</p>
+<p>Avec ma collègue Anna Amadio, nous voulons étudier une question contemporaine touchant les femmes en particulier. En faisant nos recherches, nous sommes tombés sur l’hypothèse de Donohue-Levitt. Leur hypothèse - très controversée - concerne l’effet de la légalisation de l’avortement sur la criminalité aux États-Unis. Donohue et Levitt <span class="citation" data-cites="donhuelevitt2001"><span>“THE IMPACT OF LEGALIZED ABORTION ON CRIME”</span> (<a href="#ref-donhuelevitt2001" role="doc-biblioref">n.d.</a>)</span> soutiennent l’idée que la légalisation de l’avortement aurait permis de diminuer le taux de crime dans les décennies suivant la légalisation. Le travail de John J. Donohue III et Steven D. Levitt nous a inspiré dans notre recherche de thématique de projet. Nous avons donc décidé d’analyser l’effet de la légalisation de l’avortement sur d’autres facteurs macroéconomiques au Canada.</p>
 <p>Le sujet de notre projet de recherche : l’effet de la légalisation de l’avortement sur le taux d’emploi des femmes au Canada.</p>
 <p>L’hypothèse est la suivante : les femmes qui font face à une grossesse non planifiée et qui n’ont pas accès aux soins liés à l’avortement sont contraintes de quitter leurs études ou le marché du travail et se tourner vers des diplômes de base et des métiers moins bien rémunérés.</p>
 <p>Ce projet a initialement été réalisé sur Stata durant la session d’Hiver 2023 (Jan-Avr). Ceci est un reproduction sur Rstudio par Juliana Hubacova (Sep 2023).</p>
@@ -162,7 +181,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{hubacova2023,
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-donhuelevitt2001" class="csl-entry" role="doc-biblioentry">
+<span>“THE IMPACT OF LEGALIZED ABORTION ON CRIME.”</span> n.d. <em>QUARTERLY JOURNAL OF ECONOMICS</em>.
+</div>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{hubacova2023,
   author = {Juliana Hubacova},
   editor = {},
   title = {L’effet de La Légalisation de l’avortement Sur Le Taux
