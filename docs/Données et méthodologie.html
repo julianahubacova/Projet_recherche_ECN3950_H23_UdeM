@@ -107,13 +107,13 @@ div.csl-indent {
     <a class="nav-link" href="./about.html">Introduction</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Revue littérature.html">Revue de littérature</a>
+    <a class="nav-link" href="./Revue littérature.html">Revue de littérature</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./Données et méthodologie.html" aria-current="page">Données et méthodologie</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Analyses économétriques.html">Analyses économétriques</a>
+    <a class="nav-link" href="./Analyses économétriques.html">Analyses économétriques</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -186,7 +186,23 @@ div.csl-indent {
 <p>𝐷! = 1 pour le groupe de traitement et 0 pour le groupe de contrôle</p>
 <p>𝑡 = 1 désigne l’après traitement et 0 désigne l’avant traitement</p>
 <p>𝐷! ∗ 𝑡 = 1 si on considère le groupe traitement à la période post-traitement, 0 sinon</p>
-<p>L’hypothèse principale pour la méthode des doubles différences repose sur la tendance parallèle. Cette hypothèse affirme que, en l’absence de traitement, la tendance de notre variable d’intérêt pour le groupe contrôle et le groupe traitement sont parallèle dans le temps. Ainsi, dans notre cas on s’attend à ce que les taux d’emploi pour les femmes de 15 à 44 ans et les femmes de 45 ans soient parallèle avant la légalisation de l’avortement. Cette hypothèse va être vérifier dans la section suivante qui concerne l’analyse descriptive</p>
+<p>L’hypothèse principale pour la méthode des doubles différences repose sur la tendance parallèle. Cette hypothèse affirme que, en l’absence de traitement, la tendance de notre variable d’intérêt pour le groupe contrôle et le groupe traitement sont parallèle dans le temps. Ainsi, dans notre cas on s’attend à ce que les taux d’emploi pour les femmes de 15 à 44 ans et les femmes de 45 ans soient parallèle avant la légalisation de l’avortement. Cette hypothèse va être vérifier dans la section suivante qui concerne l’analyse descriptive.</p>
+<p><strong>Analyse descriptive</strong></p>
+<p>Notre variable d’intérêt est le taux d’emploi des femmes au Canada. Nous allons observer comment cette variable a été influencée par la légalisation de l’avortement en 1988. Pour ce faire, nous allons utiliser la méthode des doubles différences avec comme groupe de traitement ‘les femmes de 15 à 44 ans’ et comme groupe de contrôle ‘les femmes de 45 ans et plus’. Notre analyse considère une période pré-traitement – 10 ans avant la légalisation de l’avortement – et une période post-traitement – un peu plus de 10 ans après la légalisation de l’avortement. Ainsi, notre période s’étend de 1978 à 2000. Avant de commencer une quelconque analyse économétrique, nous présentons les variables présentes dans notre base de données principales ainsi que quelques statistiques descriptives. Notre base de données – construites à partir des taux d’emploi rendus disponibles par Statistiques Canada et des taux d’avortement enregistrés par Wm. Robert Johnston – contient des données de panel ainsi que les variables présentes dans le <em>Tableau 1</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Table1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Tableau 1 : Descriptions des variables dont les unités d’observations sont les provinces et la fréquence est annuelle</figcaption><p></p>
+</figure>
+</div>
+<p>Étant donné la présence de deux groupes dans notre analyse – groupe contrôle et groupe traitement – nous comparons les valeurs du taux d’emploi et du taux d’avortement pré et post-traitement.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Table2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Tableau 2 : Moyenne des valeurs pour les variables du taux d'emploi et d'avortement pour les deux groupes et l'année de départ / fin au Canada</figcaption><p></p>
+</figure>
+</div>
+<p>On constate un taux d’emploi moyen plus élevé pour les femmes âgées de 15 à 44 ans par rapport aux femmes âgées de 45 ans et plus. Le taux d’avortement pour le groupe contrôle est indiquée par NA car les femmes âgées de 45 ans et plus ont un taux d’avortement pratiquement nulle étant donné que la ménopause arrive en moyenne entre 45 ans et 55 ans (add sources).</p>
 
 
 
