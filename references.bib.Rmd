@@ -1,0 +1,3 @@
+# Bibliographie
+
+@article{theimpactoflegalizedabortiononcrime, author = {John J. Donohue III and Steven D. Levitt}, title = {The impact of legalized abortion on crime}, journal = {The Quaterly Journal of Economics}, year = {2001}, note = {<https://pricetheory.uchicago.edu/levitt/Papers/DonohueLevittTheImpactOfLegalized2001.pdf>} }
