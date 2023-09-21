@@ -10,6 +10,7 @@ website:
         text: Home
       - about.qmd
       - Revue littérature.qmd
+      - Données et méthodologie.qmd
       - Analyses économétriques.qmd
 
 format:
